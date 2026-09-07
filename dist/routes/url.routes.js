@@ -6,5 +6,5 @@ router.post("/", authenticate, createUrl);
 router.get("/", authenticate, getUrls);
 router.get("/:id", authenticate, getUrl);
 router.put("/:id", authenticate, updateUrl);
-router.delete(":id", authenticate, deleteUrl);
+router.delete("/:id", authenticate, deleteUrl);
 export default router;

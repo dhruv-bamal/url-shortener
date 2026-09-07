@@ -9,7 +9,7 @@ function generateShortCode(length = 6) {
 }
 export async function createUrl(req, res) {
     try {
-        const { originalUrl } = req.body();
+        const { originalUrl } = req.body;
         const userId = req.user?.userId;
         if (!originalUrl) {
             return res.status(400).json({
